@@ -1,0 +1,143 @@
+#CB first
+attach(CB)
+#ANOVA codes
+#Attack stats
+Goals <- anova(lm(Goals~factor(Rank), data=CB))
+Shots <- anova(lm(Shots~factor(Rank), data=CB))
+SoT <- anova(lm(SoT~factor(Rank), data=CB))
+SoT. <- anova(lm(SoT.~factor(Rank), data=CB))
+G.Sh <- anova(lm(G.Sh~factor(Rank), data=CB))
+G.SoT <- anova(lm(G.SoT~factor(Rank), data=CB))
+ShoDist <- anova(lm(ShoDist~factor(Rank), data=CB))
+ShoFK <- anova(lm(ShoFK~factor(Rank), data=CB))
+ShoPK <- anova(lm(ShoPK~factor(Rank), data=CB))
+PKatt <- anova(lm(PKatt~factor(Rank), data=CB))
+
+#Pass stats
+PasTotCmp. <- anova(lm(PasTotCmp.~factor(Rank), data=CB))
+PasShoCmp. <- anova(lm(PasShoCmp.~factor(Rank), data=CB))
+PasMedCmp. <- anova(lm(PasMedCmp.~factor(Rank), data=CB))
+PasLonCmp. <- anova(lm(PasLonCmp.~factor(Rank), data=CB))
+Assists <- anova(lm(Assists~factor(Rank), data=CB))
+PassAss <- anova(lm(PasAss~factor(Rank), data=CB))
+Pass3rd <- anova(lm(Pas3rd~factor(Rank), data=CB))
+PPA <- anova(lm(PPA~factor(Rank), data=CB))
+CrsPA <- anova(lm(CrsPA~factor(Rank), data=CB))
+PasProg <- anova(lm(PasProg~factor(Rank), data=CB))
+PasLive <- anova(lm(PasLive~factor(Rank), data=CB))
+PasDead <- anova(lm(PasDead~factor(Rank), data=CB))
+PasFK <- anova(lm(PasFK~factor(Rank), data=CB))
+TB <- anova(lm(TB~factor(Rank), data=CB))
+PasPress <- anova(lm(PasPress~factor(Rank), data=CB))
+Sw <- anova(lm(Sw~factor(Rank), data=CB))
+PasCrs <- anova(lm(PasCrs~factor(Rank), data=CB))
+CK <- anova(lm(CK~factor(Rank), data=CB))
+CkIn <- anova(lm(CkIn~factor(Rank), data=CB))
+CkOut <- anova(lm(CkOut~factor(Rank), data=CB))
+CkStr <- anova(lm(CkStr~factor(Rank), data=CB))
+PasGround <- anova(lm(PasGround~factor(Rank), data=CB))
+PasLow <- anova(lm(PasLow~factor(Rank), data=CB))
+PasHigh <- anova(lm(PasHigh~factor(Rank), data=CB))
+PaswLeft <- anova(lm(PaswLeft~factor(Rank), data=CB))
+PaswRight <- anova(lm(PaswRight~factor(Rank), data=CB))
+PaswHead <- anova(lm(PaswHead~factor(Rank), data=CB))
+PasOff <- anova(lm(PasOff~factor(Rank), data=CB))
+PasOut <- anova(lm(PasOut~factor(Rank), data=CB))
+PasInt <- anova(lm(PasInt~factor(Rank), data=CB))
+PasBlocks <- anova(lm(PasBlocks~factor(Rank), data=CB))
+
+#Shot Creating Actions
+SCA <- anova(lm(SCA~factor(Rank), data=CB))
+ScaPassLive <- anova(lm(ScaPassLive~factor(Rank), data=CB))
+ScaPassDead <- anova(lm(ScaPassDead~factor(Rank), data=CB))
+ScaDrib <- anova(lm(ScaDrib~factor(Rank), data=CB))
+ScaSh <- anova(lm(ScaSh~factor(Rank), data=CB))
+ScaFld <- anova(lm(ScaFld~factor(Rank), data=CB))
+ScaDef <- anova(lm(ScaDef~factor(Rank), data=CB))
+
+#Goal Creating Actions
+GCA <- anova(lm(GCA~factor(Rank), data=CB))
+GcaPassLive <- anova(lm(GcaPassLive~factor(Rank), data=CB))
+GcaPassDead <- anova(lm(GcaPassDead~factor(Rank), data=CB))
+GcaDrib <- anova(lm(GcaDrib~factor(Rank), data=CB))
+GcaSh <- anova(lm(GcaSh~factor(Rank), data=CB))
+GcaFld <- anova(lm(GcaFld~factor(Rank), data=CB))
+GcaDef <- anova(lm(GcaDef~factor(Rank), data=CB))
+
+#Tackles
+Tkl <- anova(lm(Tkl~factor(Rank), data=CB))
+TklWon <- anova(lm(TklWon~factor(Rank), data=CB))
+TklDef3rd <- anova(lm(TklDef3rd~factor(Rank), data=CB))
+TklMid3rd <- anova(lm(TklMid3rd~factor(Rank), data=CB))
+TklAtt3rd <- anova(lm(TklAtt3rd~factor(Rank), data=CB))
+TklDri <- anova(lm(TklDri~factor(Rank), data=CB))
+TklDriAtt <- anova(lm(TklDriAtt~factor(Rank), data=CB))
+TklDri. <- anova(lm(TklDri.~factor(Rank), data=CB))
+TklDriPast <- anova(lm(TklDriPast~factor(Rank), data=CB))
+
+#Pressing
+Press <- anova(lm(Press~factor(Rank), data=CB))
+PresSucc <- anova(lm(PresSucc~factor(Rank), data=CB))
+Press. <- anova(lm(Press.~factor(Rank), data=CB))
+PresDef3rd <- anova(lm(TklDef3rd~factor(Rank), data=CB))
+PresMid3rd <- anova(lm(TklMid3rd~factor(Rank), data=CB))
+PresAtt3rd <- anova(lm(TklAtt3rd~factor(Rank), data=CB))
+
+#Blocks
+Blocks <- anova(lm(Blocks~factor(Rank), data=CB))
+BlkSh <- anova(lm(BlkSh~factor(Rank), data=CB))
+BlkShSv <- anova(lm(BlkShSv~factor(Rank), data=CB))
+BlkPass <- anova(lm(BlkPass~factor(Rank), data=CB))
+
+#Etc. Defensive stats
+Int <- anova(lm(Int~factor(Rank), data=CB))
+Tkl.Int <- anova(lm(Tkl.Int~factor(Rank), data=CB))
+Clr <- anova(lm(Clr~factor(Rank), data=CB))
+Err <- anova(lm(Err~factor(Rank), data=CB))
+
+#Touches
+Touches <- anova(lm(Touches~factor(Rank), data=CB))
+TouDefPen <- anova(lm(TouDefPen~factor(Rank), data=CB))
+TouDef3rd <- anova(lm(TouDef3rd~factor(Rank), data=CB))
+TouMid3rd <- anova(lm(TouMid3rd~factor(Rank), data=CB))
+TouAtt3rd <- anova(lm(TouAtt3rd~factor(Rank), data=CB))
+TouAttPen <- anova(lm(TouAttPen~factor(Rank), data=CB))
+TouLive <- anova(lm(TouLive~factor(Rank), data=CB))
+
+#Dribbling
+DriSucc <- anova(lm(DriSucc~factor(Rank), data=CB))
+DriAtt <- anova(lm(DriAtt~factor(Rank), data=CB))
+DriSucc. <- anova(lm(DriSucc.~factor(Rank), data=CB))
+DriPast <- anova(lm(DriPast~factor(Rank), data=CB))
+DriMegs <- anova(lm(DriMegs~factor(Rank), data=CB))
+
+#Carries
+Carries <- anova(lm(Carries~factor(Rank), data=CB))
+CarTotDist <- anova(lm(CarTotDist~factor(Rank), data=CB))
+CarPrgDist <- anova(lm(CarPrgDist~factor(Rank), data=CB))
+CarProg <- anova(lm(CarProg~factor(Rank), data=CB))
+Car3rd <- anova(lm(Car3rd~factor(Rank), data=CB))
+CPA <- anova(lm(CPA~factor(Rank), data=CB))
+CarMis <- anova(lm(CarMis~factor(Rank), data=CB))
+CarDis <- anova(lm(CarDis~factor(Rank), data=CB))
+
+#Pass Receiving
+RecTarg <- anova(lm(RecTarg~factor(Rank), data=CB))
+Rec. <- anova(lm(Rec.~factor(Rank), data=CB))
+RecProg <- anova(lm(RecProg~factor(Rank), data=CB))
+
+#Misc.
+CrdY <- anova(lm(CrdY~factor(Rank), data=CB))
+CrdR <- anova(lm(CrdR~factor(Rank), data=CB))
+X2CrdY <- anova(lm(X2CrdY~factor(Rank), data=CB))
+Fls <- anova(lm(Fls~factor(Rank), data=CB))
+Fld <- anova(lm(Fld~factor(Rank), data=CB))
+Off <- anova(lm(Off~factor(Rank), data=CB))
+Crs <- anova(lm(Crs~factor(Rank), data=CB))
+PKwon <- anova(lm(PKwon~factor(Rank), data=CB))
+PKcon <- anova(lm(PKcon~factor(Rank), data=CB))
+OG <- anova(lm(OG~factor(Rank), data=CB))
+Recov <- anova(lm(Recov~factor(Rank), data=CB))
+AerWon <- anova(lm(AerWon~factor(Rank), data=CB))
+AerLost <- anova(lm(AerLost~factor(Rank), data=CB))
+AerWon. <- anova(lm(AerWon.~factor(Rank), data=CB))
